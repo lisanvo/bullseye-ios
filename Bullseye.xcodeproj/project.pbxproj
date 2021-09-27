@@ -19,6 +19,7 @@
 		3B484423267189B10055DDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B484422267189B10055DDBA /* Assets.xcassets */; };
 		3B484426267189B10055DDBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B484425267189B10055DDBA /* Preview Assets.xcassets */; };
 		3BA3675326FE6EA400D6DD79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA3675226FE6EA400D6DD79 /* Constants.swift */; };
+		3BA3675526FEBE8F00D6DD79 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA3675426FEBE8F00D6DD79 /* LeaderboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3B484425267189B10055DDBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B484427267189B10055DDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA3675226FE6EA400D6DD79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3BA3675426FEBE8F00D6DD79 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				3B34D15B26E0955C00B3895F /* RoundViews.swift */,
 				3B34D15F26E0A0DB00B3895F /* BackgroundView.swift */,
 				3B34D16326F700D100B3895F /* PointsView.swift */,
+				3BA3675426FEBE8F00D6DD79 /* LeaderboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA3675526FEBE8F00D6DD79 /* LeaderboardView.swift in Sources */,
 				3B484421267189AF0055DDBA /* ContentView.swift in Sources */,
 				3B3CA4AA26DCA0CE003F8885 /* TextViews.swift in Sources */,
 				3B34D15826E087A300B3895F /* Shapes.swift in Sources */,

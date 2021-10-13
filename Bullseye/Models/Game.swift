@@ -7,10 +7,16 @@
 
 import Foundation
 
+struct LeaderboardEntry {
+	let score: Int
+	let date: Date
+}
+
 struct Game {
     var target = Int.random(in: 1...100)
     var score = 0
     var round = 1
+	 var leaderboardEntries: [LeaderboardEntry] = []
     
     func points(sliderValue: Int) -> Int {
 		let difference = abs(target - sliderValue)
@@ -25,12 +31,19 @@ struct Game {
 		return 100 - difference + bonus
     }
 	
+	mutating func addToLeaderboard(point: Int) {
+		self.leaderboardEntries.append(LeaderboardEntry(score: point, date: Date()))
+		self.leaderboardEntries.sort{ $0.score > $1.score }
+	}
+	
 	// mutating func indicates that when you call this method, it
 	// will change some values in the struct itself
 	mutating func startNewRound(points: Int) {
 		self.score += points
 		self.round += 1
 		self.target = Int.random(in: 1...100)
+		
+		addToLeaderboard(point: points)
 	}
 	
 	mutating func restart() {
